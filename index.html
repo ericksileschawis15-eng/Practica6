@@ -4,8 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Princesita Sofia</title>
-</head>
-<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px;">
+    <style>
+    /* ✨ Fondo mágico con gradiente animado */
+    body {
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(45deg, #f9c5eb, #d8b7ff, #c8e7ff, #f7b7ff);
+        background-size: 400% 400%;
+        animation: fondoMueve 10s ease infinite;
+        color: #4a148c;
+        overflow-x: hidden;
+    }
+
+    @keyframes fondoMueve {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    /* ✨ Encabezado brillante */
+    h1 {
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 0 10px #c70039, 0 0 30px #ff69b4, 0 0 50px #ff00ff;
+        font-size: 3.5em;
+        margin-top: 40px;
+        animation: brillar 2.5s infinite alternate;
+    }
+
+    @keyframes brillar {
+        from { text-shadow: 0 0 15px #fff, 0 0 30px #ffb6c1; }
+        to { text-shadow: 0 0 30px #fff, 0 0 60px #ff69b4; }
+    }
+
+    /* 💫 Efecto de estrellas flotantes */
+    .estrellas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        background: url('https://i.imgur.com/vYBqS3M.png');
+        animation: estrellasBrillan 10s linear infinite;
+        opacity: 0.6;
+    }
+</style>
+    <script>
+    // ✨ Generador de estrellas flotantes
+    document.addEventListener('DOMContentLoaded', () => {
+        const estrellasContainer = document.createElement('div');
+        estrellasContainer.classList.add('estrellas');
+        document.body.appendChild(estrellasContainer);
+
+        for (let i = 0; i < 100; i++) {
+            const estrella = document.createElement('div');
+            estrella.style.position = 'absolute';
+            estrella.style.width = `${Math.random() * 3 + 1}px`;
+            estrella.style.height = estrella.style.width;
+            estrella.style.background = 'white';
+            estrella.style.borderRadius = '50%';
+            estrella.style.top = `${Math.random() * 100}%`;
+            estrella.style.left = `${Math.random() * 100}%`;
+            estrella.style.opacity = Math.random();
+            estrella.style.animation = `moverEstrella ${Math.random() * 20 + 10}s linear infinite`;
+            estrellasContainer.appendChild(estrella);
+        }
+    });
+
+    </script>
         <h1 style="text-align: center; color: #c70039;">La princesita sofia </h1>
 <div style="text-align: center;">
     <img src="Untitled.png" alt=" no se cargo la imagen" height="400" width="400">
@@ -33,7 +101,7 @@ Además, Sofía tiene un amuleto mágico de Ávalon, que le da poderes especiale
 <div style="text-align: center;">
     <video src="video1.mp4" alt="No soporto tu computadora" height="315px" width="560px"></video>
 <p>jsjhds</p>
-<p>ssjs</p></p>hh
+<p>ssjs</p></p>
  
 </body>
 </html> 
