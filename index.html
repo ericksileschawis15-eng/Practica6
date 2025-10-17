@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Princesita Sofia</title>
-    <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>👑 La Princesita Sofía 👑</title>
+
+<style>
     /* ✨ Fondo mágico con gradiente animado */
-    body 
-{
+    body {
         font-family: 'Comic Sans MS', cursive, sans-serif;
         margin: 0;
         padding: 0;
@@ -51,35 +51,67 @@
         animation: estrellasBrillan 10s linear infinite;
         opacity: 0.6;
     }
-</style>
-    <script>
-    // ✨ Generador de estrellas flotantes
-    document.addEventListener('DOMContentLoaded', () => {
-        const estrellasContainer = document.createElement('div');
-        estrellasContainer.classList.add('estrellas');
-        document.body.appendChild(estrellasContainer);
 
-        for (let i = 0; i < 100; i++) {
-            const estrella = document.createElement('div');
-            estrella.style.position = 'absolute';
-            estrella.style.width = `${Math.random() * 3 + 1}px`;
-            estrella.style.height = estrella.style.width;
-            estrella.style.background = 'white';
-            estrella.style.borderRadius = '50%';
-            estrella.style.top = `${Math.random() * 100}%`;
-            estrella.style.left = `${Math.random() * 100}%`;
-            estrella.style.opacity = Math.random();
-            estrella.style.animation = `moverEstrella ${Math.random() * 20 + 10}s linear infinite`;
-            estrellasContainer.appendChild(estrella);
-        }
-    });
-    
+    @keyframes estrellasBrillan {
+        from { background-position: 0 0; }
+        to { background-position: 1000px 1000px; }
+    }
 
-    </script>
-        <h1 style="text-align: center; color: #c70039;">La princesita sofia </h1>
+    /* ✨ Contenedores de texto */
+    section {
+        max-width: 900px;
+        margin: 40px auto;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 25px;
+        border-radius: 25px;
+        box-shadow: 0 0 30px rgba(255, 192, 203, 0.5);
+        backdrop-filter: blur(5px);
+    }
+
+    h2, h3, h4 {
+        text-align: center;
+        color: #6a1b9a;
+        text-shadow: 0 0 5px #fff, 0 0 10px #ffb6c1;
+    }
+
+    p, ol {
+        line-height: 1.7;
+        font-size: 1.1em;
+        text-align: justify;
+    }
+
+    ol {
+        background: rgba(255, 255, 255, 0.6);
+        padding: 20px;
+        border-radius: 15px;
+        border: 3px double #b388ff;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    /* 🌸 Imágenes con efecto de aparición y brillo */
+    .imagenes {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    img {
+        margin: 15px;
+        border-radius: 20px;
+        border: 5px solid #fff;
+        box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        animation: flotar 4s ease-in-out infinite;
+    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princesita Sofia</title>
 </head>
-<body></body>
-<div style="text-align: center;">
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px;">
+        <h1 style="text-align: center; color: #c70039;">La princesita sofia </h1>
+        <div style="text-align: center;">
     <img src="Untitled.png" alt=" no se cargo la imagen" height="400" width="400">
     <img src = "sofia2.png.png" alt="no se cargo la imagen" height="400" width="400">
     <img src="sodiadeltemu.png" alt=" No se cargo la imag" height="1000" width="1100">
@@ -100,11 +132,12 @@ Además, Sofía tiene un amuleto mágico de Ávalon, que le da poderes especiale
     <li>Es muy buena en el esgrima y ha demostrado tener habilidades mecánicas al construir un carruaje rápido con piezas de desecho. </li>
     <li> El nombre "Sofía" significa "sabiduría" en griego. </li>
 </ol>
-<a href="Sofía Primera | Disney Wiki | Fandom https://share.google/K4c07IXX0IWITOgPV">ir al enlace</a>
- <div style="text-align: center;"></div>
+<div style="text-align: center;"></div>
 <h4>🎥 VIDEO</h4> 
 <div style="text-align: center;">
     <video src="video1.mp4" alt="No soporto tu computadora" height="315px" width="560px"></video>
+<p>jsjhds</p>
+
  
 </body>
-</html> 
+</html>
