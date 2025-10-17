@@ -105,39 +105,100 @@
         transition: transform 0.4s ease, box-shadow 0.4s ease;
         animation: flotar 4s ease-in-out infinite;
     }
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Princesita Sofia</title>
+
+    img:hover {
+        transform: scale(1.08);
+        box-shadow: 0 0 40px #ff66cc;
+    }
+
+    @keyframes flotar {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+    }
+
+    /* 🎥 Video */
+    .video-container {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    video {
+        border-radius: 20px;
+        border: 4px solid #fff;
+        box-shadow: 0 0 25px rgba(170, 100, 255, 0.6);
+    }
+
+    /* 👑 Pie de página */
+    footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 1.2em;
+        color: #fff;
+        text-shadow: 0 0 10px #ff69b4;
+        background: rgba(106, 27, 154, 0.8);
+        border-top: 3px solid #fff;
+        margin-top: 50px;
+    }
+
+</style>
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px;">
-        <h1 style="text-align: center; color: #c70039;">La princesita sofia </h1>
-        <div style="text-align: center;">
-    <img src="Untitled.png" alt=" no se cargo la imagen" height="400" width="400">
-    <img src = "sofia2.png.png" alt="no se cargo la imagen" height="400" width="400">
-    <img src="sodiadeltemu.png" alt=" No se cargo la imag" height="1000" width="1100">
+<body>
+
+<div class="estrellas"></div>
+
+<h1>La Princesita Sofía </h1>
+
+<div class="imagenes">
+    <img src="Untitled.png" alt="Sofía" height="350" width="350">
+    <img src="sofia2.png.png" alt="Sofía con sus amigos" height="350" width="350">
+    <img src="sodiadeltemu.png" alt="Escena Sofía the First" height="450" width="800">
+</div>
+
+<section>
+    <h2>¿Quién es la Princesita Sofía?</h2>
+    <p>
+        La Princesita Sofía es una niña amable, valiente y curiosa. Es la protagonista de la serie animada 
+        <strong>“Sofía the First”</strong> de Disney. Antes era una niña común que vivía con su mamá Miranda, 
+        hasta que esta se casó con el rey Roland II, y Sofía se convirtió en princesa.
+    </p>
+    <p>
+        Sofía tiene cabello castaño, ojos azules y suele usar un vestido morado con una tiara plateada. 
+        Es dulce, respetuosa y siempre trata de ayudar a los demás. Aprende que ser princesa 
+        no es solo llevar una corona, sino tener un corazón bondadoso.
+    </p>
+    <p>
+        Además, su amuleto de Ávalon le da poderes mágicos, como hablar con los animales 
+        y comunicarse con princesas de otros reinos.
+    </p>
+</section>
+
+<section>
+    <h3> Características </h3>
+    <ol>
+        <li>Antes de ser princesa, Sofía era una niña sencilla y humilde.</li>
+        <li>Su amuleto le permite hablar con animales y aprender magia.</li>
+        <li>Tiene una gran relación con sus hermanos James y Amber.</li>
+        <li>Es hábil en esgrima y le encanta construir cosas.</li>
+        <li>“Sofía” significa <em>sabiduría</em> en griego.</li>
+    </ol>
+</section>
+
+<section>
+    <h4>🎥 Video</h4>
+    <div class="video-container">
+        <video src="video1.mp4" controls height="315" width="560">
+            Tu navegador no soporta el video.
+        </video>
     </div>
-<div style="text-align: center;"></div>
-<h2>   ¿QUIEN ES LA PRINCESITA SOFIA ?    </h2>
-    <p>Princesita Sofía es una niña amable, valiente y curiosa. Es la protagonista de la serie animada “Sofía the First” de Disney. Antes era una niña común que vivía con su mamá Miranda, hasta que esta se casó con el rey Roland II, y Sofía se convirtió en princesa.
+</section>
+<section>
+<center>
+<h1>🎧 Audio</h1>
+ <audio src="audio.mp3.mp3" controls>
+    Tu navegador no soporta el audio.
+    </audio>
+</center>
+</section> 
 
-Sofía tiene cabello castaño, ojos azules grandes y suele usar un vestido morado con una tiara plateada. Es muy educada, dulce y siempre trata de ayudar a los demás. A lo largo de la serie aprende lo que significa ser una verdadera princesa: no solo llevar una corona, sino tener un buen corazón, ser justa y generosa.
-
-Además, Sofía tiene un amuleto mágico de Ávalon, que le da poderes especiales, como hablar con los animales y comunicarse con princesas de otros reinos.</p>
-<div style="text-align: center;"></div>
-<h3>CARACTERISTICAS</h3>
-<ol>
-    <li>Antes de unirse a la realeza, Sofía era una niña de familia humilde y conserva esa personalidad despreocupada.</li>
-    <li>Su amuleto, que le permite hablar con animales, es un artefacto mágico que aprendió a usar con cuidado para no causar problemas.</li>
-    <li>Tiene una estrecha relación con su medio hermano, el príncipe James, y su hermana, la princesa Amber, con la que a menudo discute por sus diferentes puntos de vista, pero a quien quiere mucho.</li>
-    <li>Es muy buena en el esgrima y ha demostrado tener habilidades mecánicas al construir un carruaje rápido con piezas de desecho. </li>
-    <li> El nombre "Sofía" significa "sabiduría" en griego. </li>
-</ol>
-<div style="text-align: center;"></div>
-<h4>🎥 VIDEO</h4> 
-<div style="text-align: center;">
-    <video src="video1.mp4" alt="No soporto tu computadora" height="315px" width="560px"></video>
-<p>jsjhds</p>
-
- 
 </body>
 </html>
